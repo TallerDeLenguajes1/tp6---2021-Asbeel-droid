@@ -1,0 +1,15 @@
+C:\Taller1\tp6\tp6---2021-Asbeel-droid\TP6\bin\Debug\netcoreapp3.1\TP6.exe
+C:\Taller1\tp6\tp6---2021-Asbeel-droid\TP6\bin\Debug\netcoreapp3.1\TP6.deps.json
+C:\Taller1\tp6\tp6---2021-Asbeel-droid\TP6\bin\Debug\netcoreapp3.1\TP6.runtimeconfig.json
+C:\Taller1\tp6\tp6---2021-Asbeel-droid\TP6\bin\Debug\netcoreapp3.1\TP6.runtimeconfig.dev.json
+C:\Taller1\tp6\tp6---2021-Asbeel-droid\TP6\bin\Debug\netcoreapp3.1\TP6.dll
+C:\Taller1\tp6\tp6---2021-Asbeel-droid\TP6\bin\Debug\netcoreapp3.1\TP6.pdb
+C:\Taller1\tp6\tp6---2021-Asbeel-droid\TP6\obj\Debug\netcoreapp3.1\TP6.csproj.AssemblyReference.cache
+C:\Taller1\tp6\tp6---2021-Asbeel-droid\TP6\obj\Debug\netcoreapp3.1\TP6.csproj.GenerateResource.cache
+C:\Taller1\tp6\tp6---2021-Asbeel-droid\TP6\obj\Debug\netcoreapp3.1\TP6.AssemblyInfoInputs.cache
+C:\Taller1\tp6\tp6---2021-Asbeel-droid\TP6\obj\Debug\netcoreapp3.1\TP6.AssemblyInfo.cs
+C:\Taller1\tp6\tp6---2021-Asbeel-droid\TP6\obj\Debug\netcoreapp3.1\TP6.csproj.CoreCompileInputs.cache
+C:\Taller1\tp6\tp6---2021-Asbeel-droid\TP6\obj\Debug\netcoreapp3.1\TP6.dll
+C:\Taller1\tp6\tp6---2021-Asbeel-droid\TP6\obj\Debug\netcoreapp3.1\TP6.pdb
+C:\Taller1\tp6\tp6---2021-Asbeel-droid\TP6\obj\Debug\netcoreapp3.1\TP6.genruntimeconfig.cache
+C:\Taller1\tp6\tp6---2021-Asbeel-droid\TP6\obj\Debug\netcoreapp3.1\TP6.FrmCalculadora.resources
