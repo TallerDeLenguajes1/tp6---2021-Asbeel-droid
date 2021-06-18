@@ -1,6 +1,6 @@
-#Trabajo Practico N° 6
+# Trabajo Practico N° 6
 
-##Ejercicio 1
+## Ejercicio 1
 
 - ¿Qué es la propiedad TabIndex? ¿Para qué se utiliza?
   Libreria: System.Windows.Controls
