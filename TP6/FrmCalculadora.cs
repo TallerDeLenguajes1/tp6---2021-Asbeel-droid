@@ -161,16 +161,15 @@ namespace TP6
                     btnPunto.PerformClick();
                     break;
                 default:
+                    if (e.KeyChar == Convert.ToChar(Keys.Enter))
+                    {
+                        btnIgual.PerformClick();
+                    }
+                    else if (e.KeyChar == Convert.ToChar(Keys.Back))
+                    {
+                        btnC.PerformClick();
+                    }
                     break;
-            }
-
-            if (e.KeyChar == Convert.ToChar(Keys.Enter))
-            {
-                btnIgual.PerformClick();
-            }
-            else if (e.KeyChar == Convert.ToChar(Keys.Delete))
-            {
-                btnC.PerformClick();
             }
         }
     }
