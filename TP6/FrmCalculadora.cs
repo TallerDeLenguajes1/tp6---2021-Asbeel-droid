@@ -95,7 +95,7 @@ namespace TP6
                     case '/':
                         if (calculo.Numero2 != 0)
                         {
-                            calculo.Numero1 = calculo.Suma();
+                            calculo.Numero1 = calculo.Division();
                             txtPantalla.Text = Convert.ToString(calculo.Numero1);
                         }
                         else
