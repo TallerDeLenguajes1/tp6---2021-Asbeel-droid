@@ -36,11 +36,11 @@ namespace TP6
 
         private void agregarOperador(object sender, EventArgs e)
         {
-            Regex controlOperador = new Regex(@"^-?\d+[\.\d+]?$");//no filtra para lo q se creo ;-;
+            Regex controlOperador = new Regex(@"^-?\d+(\,\d+)?$");
 
             if (txtPantalla.Text != "")
             {
-                if (controlOperador.IsMatch(txtPantalla.Text) )// proba con un or y otro regex
+                if (controlOperador.IsMatch(txtPantalla.Text) )
                 {
                     extraerDesdeAqui = txtPantalla.Text.Length + 1;//Guardo hasta donde esta el primer numero
 
@@ -64,15 +64,14 @@ namespace TP6
 
         private void btnPunto_Click(object sender, EventArgs e)
         {
-            if (!txtPantalla.Text.Contains(","))
-            {
                 txtPantalla.Text += ",";
-            }
         }
 
         private void btnIgual_Click(object sender, EventArgs e)
         {
-            if (txtPantalla.Text != "")
+            Regex controlIgual = new Regex(@"^-?\d+(\,\d+)?\+?\-?\*?\/?\d+(\,\d+)?$");
+
+            if (controlIgual.IsMatch(txtPantalla.Text))
             {
                 String n2 = txtPantalla.Text;
                 n2 = n2.Substring(extraerDesdeAqui); // Esta linea Extrae desde el primer numero 
@@ -109,6 +108,69 @@ namespace TP6
                         MessageBox.Show("ERROR, nose que paso :c");
                         break;
                 }
+            }
+        }
+
+        private void txtPantalla_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            switch (e.KeyChar)
+            {
+                case '1':
+                    btn1.PerformClick();
+                    break;
+                case '2':
+                    btn2.PerformClick();
+                    break;
+                case '3':
+                    btn3.PerformClick();
+                    break;
+                case '4':
+                    btn4.PerformClick();
+                    break;
+                case '5':
+                    btn5.PerformClick();
+                    break;
+                case '6':
+                    btn6.PerformClick();
+                    break;
+                case '7':
+                    btn7.PerformClick();
+                    break;
+                case '8':
+                    btn8.PerformClick();
+                    break;
+                case '9':
+                    btn9.PerformClick();
+                    break;
+                case '0':
+                    btn0.PerformClick();
+                    break;
+                case '+':
+                    btnSuma.PerformClick();
+                    break;
+                case '-':
+                    btnResta.PerformClick();
+                    break;
+                case '/':
+                    btnDivision.PerformClick();
+                    break;
+                case '*':
+                    btnMultiplicacion.PerformClick();
+                    break;
+                case '.':
+                    btnPunto.PerformClick();
+                    break;
+                default:
+                    break;
+            }
+
+            if (e.KeyChar == Convert.ToChar(Keys.Enter))
+            {
+                btnIgual.PerformClick();
+            }
+            else if (e.KeyChar == Convert.ToChar(Keys.Delete))
+            {
+                btnC.PerformClick();
             }
         }
     }

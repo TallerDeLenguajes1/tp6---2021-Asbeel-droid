@@ -42,7 +42,7 @@ namespace TP6
             this.btn8 = new System.Windows.Forms.Button();
             this.btn9 = new System.Windows.Forms.Button();
             this.btnPunto = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnSuma = new System.Windows.Forms.Button();
             this.btnResta = new System.Windows.Forms.Button();
             this.btnMultiplicacion = new System.Windows.Forms.Button();
             this.btnDivision = new System.Windows.Forms.Button();
@@ -57,6 +57,7 @@ namespace TP6
             this.txtPantalla.ReadOnly = true;
             this.txtPantalla.Size = new System.Drawing.Size(177, 25);
             this.txtPantalla.TabIndex = 0;
+            this.txtPantalla.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPantalla_KeyPress);
             // 
             // btnC
             // 
@@ -178,15 +179,15 @@ namespace TP6
             this.btnPunto.UseVisualStyleBackColor = true;
             this.btnPunto.Click += new System.EventHandler(this.btnPunto_Click);
             // 
-            // button1
+            // btnSuma
             // 
-            this.button1.Location = new System.Drawing.Point(212, 57);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(55, 60);
-            this.button1.TabIndex = 13;
-            this.button1.Text = "+";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.agregarOperador);
+            this.btnSuma.Location = new System.Drawing.Point(212, 57);
+            this.btnSuma.Name = "btnSuma";
+            this.btnSuma.Size = new System.Drawing.Size(55, 60);
+            this.btnSuma.TabIndex = 13;
+            this.btnSuma.Text = "+";
+            this.btnSuma.UseVisualStyleBackColor = true;
+            this.btnSuma.Click += new System.EventHandler(this.agregarOperador);
             // 
             // btnResta
             // 
@@ -238,7 +239,7 @@ namespace TP6
             this.Controls.Add(this.btnDivision);
             this.Controls.Add(this.btnMultiplicacion);
             this.Controls.Add(this.btnResta);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnSuma);
             this.Controls.Add(this.btnPunto);
             this.Controls.Add(this.btn9);
             this.Controls.Add(this.btn8);
@@ -274,7 +275,7 @@ namespace TP6
         private System.Windows.Forms.Button btn8;
         private System.Windows.Forms.Button btn9;
         private System.Windows.Forms.Button btnPunto;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnSuma;
         private System.Windows.Forms.Button btnResta;
         private System.Windows.Forms.Button btnMultiplicacion;
         private System.Windows.Forms.Button btnDivision;
